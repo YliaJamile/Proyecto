@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_Login">
+
+    <fragment
+        android:id="@+id/nav_Login"
+        android:name="com.example.brailleexpress.ui.Login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+    <action
+        android:id="@+id/action_RegistroFragment_to_LoginFragment"
+        app:destination="@id/nav_Login"/> </fragment>
+
+    <fragment
+        android:id="@+id/nav_Registro"
+        android:name="com.example.brailleexpress.ui.Registro.RegistroFragment"
+        android:label="Registro"
+        tools:layout="@layout/fragment_registro"/>
+
+    <fragment
+        android:id="@+id/nav_Traductor"
+        android:name="com.example.brailleexpress.ui.Traductor.TraductorFragment"
+        android:label="@string/menu_Traductor"
+        tools:layout="@layout/fragment_traductor" />
+
+    <fragment
+        android:id="@+id/nav_Historial"
+        android:name="com.example.brailleexpress.ui.Historial.HistorialFragment"
+        android:label="@string/menu_Historial"
+        tools:layout="@layout/fragment_historial" />
+
+    <fragment
+        android:id="@+id/nav_Configuracion"
+        android:name="com.example.brailleexpress.ui.Configuracion.ConfiguracionFragment"
+        android:label="@string/menu_Configuracion"
+        tools:layout="@layout/fragment_configuracion" />
+
+</navigation>
